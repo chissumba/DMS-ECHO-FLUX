@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>DMS Echo Flux</title>
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="./Screenshot 2024-10-18 155211.png" alt="DMS Logo">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-icon" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="rainbow-button">Search</button>
+            <span class="close" onclick="toggleSearch()">✖</span>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <img src="./Screenshot 2024-10-18 155629.png" alt="DMS Logo">
+                </div>
+                <p style="color: white;">Welcome to our Document Management System website.</p>
+                <button class="discover-button">Discover</button>
+                <hr>
+                <h4>Connected Details</h4>
+                <div class="contact-details">
+                    <div><i class="fas fa-envelope orange-icon"></i> SHAYGMAIL.com</div>
+                    <div><i class="fas fa-phone orange-icon"></i> +123 456 7890</div>
+                    <div><i class="fas fa-map-marker-alt orange-icon"></i> 51 Durban St, City</div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="close-sidebar" onclick="toggleSidebar()">✖</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="parallax welcome" id="home">
+            <h2>WELCOME TO DMS ECHO FLUX!</h2>
+            <h3>Innovative Solutions </h3>
+            <h4>For Your Business</h4>
+            <button class="neon-button">Get Started</button>
+        </section>
+
+
+        <section class="parallax info-cards">
+
+            <h5 style="font-size: larger;">Organise your document</h5>
+            <section id="features" class="features-section">
+                <div class="feature">
+                    <img src="./images/Screenshot 2024-10-18 155629.png" alt="Feature 1">
+                    <h2>Secure Storage</h2>
+                    <p>Keep your documents safe and secure with our state-of-the-art encryption technology.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/Screenshot 2024-10-18 234425.png" alt="Feature 2">
+                    <h2>Easy Access</h2>
+                    <p>Access your documents from anywhere, at any time, with just a few clicks.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/Screenshot 2024-10-18 190548.png" alt="Feature 3">
+                    <h2>Collaborative Tools</h2>
+                    <p>Collaborate with your team in real-time, with seamless sharing and editing tools.</p>
+                </div>
+            </section>
+
+        <style>
+            .features-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration-style: double;
+    background-image: url(./1.jpg);
+    background-size: cover;
+}
+
+.feature {
+    background-image: url(./mm1.png);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.6s ease, background 0.6s ease;
+    outline: none;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+        </style>
+
+        <section class="parallax clients" id="clients">
+            <h2>Our Clients</h2>
+            <div class="client-logos">
+
+<!-- Client Section -->
+<section class="clients" id="clients">
+    <div class="container">
+      
+      <p>Our Most Trusted Clients</p>
+      <div class="client-logos">
+        <div class="client-logo">
+          <img src="./chatting/LOGO (2).png" alt="Client 1">
+          <p>Client 1</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/blue front image dress.png" alt="Client 2">
+          <p>Client 2</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/business 1.jpeg" alt="Client 3">
+          <p>Client 3</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/businness 5.jpg" alt="Client 4">
+          <p>Client 4</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/damn gorgeous.jpg" alt="Client 5">
+          <p>Client 5</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/6666.png" alt="Client 6">
+          <p>Client 6</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/white front image dress.png" alt="Client 7">
+          <p>Client 7</p>
+        </div>
+        <div class="client-logo">
+          <img src="./chatting/LOGO (2).png" alt="Client 8">
+          <p>Client 8</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .clients {
+    padding: 50px 0;
+  }
+  
+  .clients .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .clients h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .clients p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .client-logo {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .client-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .client-logo p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  </style>
+  <script>
+  // Using Swiper.js library
+  var swiper = new Swiper('.client-logos', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+    }
+  });
+  </script>>
+
+                <!-- Add client logos here -->
+            </div>
+        </section>
+
+        <section class="parallax text-image-reveal">
+            <h2>About Our DMS</h2>
+            <div class="text-content">Information about the document management system.</div>
+            <img src="./images/Screenshot 2024-10-18 155450.png" alt="DMS Image">
+        </section>
+
+        <section class="parallax portfolio" id="portfolio">
+            <h2>Projects</h2>
+            <p>Description about DMS portfolio projects.</p>
+            <button class="animated-button">View Projects</button>
+        
+
+<style>
+   .portfolio nav {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio nav-links {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio nav-links li {
+    margin-left: 30px;
+    align-items: center;
+}
+
+.portfolio nav-links a {
+    color: darkblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: #00c6ff;
+}
+</style>
+
+            
+            <!-- Our Latest Projects Section -->
+            <section class="latest-projects" id="latest-projects">
+              <div class="container">
+                <h2>Our Latest Projects</h2>
+                <p>Our most trusted Clients.</p>
+                <div class="project-filter">
+                  <ul>
+                    <li><a href="#" data-filter="all">All</a></li>
+                    <li><a href="#" data-filter="projects">Projects</a></li>
+                    <li><a href="#" data-filter="latest-update">Latest Update</a></li>
+                    <li><a href="#" data-filter="development">Development</a></li>
+                  </ul>
+                </div>
+            <style>
+                .project-filter{
+                    line-height: 1.5;
+                }
+            </style>
+                <div class="project-grid">
+                  <div class="project-item" data-category="projects">
+                    <img src="./images/Screenshot 2024-10-18 155201.png" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p></p>
+                  </div>
+                  <div class="project-item" data-category="latest-update">
+                    <img src="./images/WHATSAPP.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p></p>
+                  </div>
+                  <div class="project-item" data-category="development">
+                    <img src="./images/Screenshot 2024-10-18 155644.png" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p></p>
+                  </div>
+                  <!-- Add more project items here -->
+                </div>
+              </div>
+            </section>
+            
+            <style>
+            .latest-projects {
+              padding: 50px 0;
+              color: white;
+            }
+            
+            .latest-projects .container {
+              max-width: 1200px;
+              margin: 0 auto;
+            }
+            
+            .latest-projects h2 {
+              font-size: 36px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+            
+            .latest-projects p {
+              font-size: 18px;
+              margin-bottom: 40px;
+            }
+            
+            .project-filter ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+            
+            .project-filter li {
+              margin-right: 20px;
+            }
+            
+            .project-filter a {
+              font-size: 16px;
+              color: red;
+              text-decoration: none;
+            }
+            
+            .project-filter a:hover {
+              color: aqua;
+            }
+            
+            .project-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 20px;
+            }
+            
+            .project-item {
+              background-color: #fff;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              padding: 20px;
+            }
+            
+            .project-item img {
+              width: 100%;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px 10px 0 0;
+            }
+            
+            .project-item h3 {
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+            
+            .project-item p {
+              font-size: 14px;
+              margin-bottom: 20px;
+            }
+        </style>
+        <script>
+            // Using jQuery library
+            $(document).ready(function() {
+              $('.project-filter a').on('click', function() {
+                var filter = $(this).data('filter');
+                $('.project-grid').isotope({
+                  filter: '.' + filter
+                });
+              });
+            });
+        </script>
+        </section>
+
+        <section class="parallax services" id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">Service 1</div>
+                <div class="service-card">Service 2</div>
+                <div class="service-card">Service 3</div>
+            </div>
+        </section>
+
+        <section class="parallax experience">
+            <h2>Our Experience</h2>
+            <div class="experience-content">
+                <img src="./images/Screenshot 2024-10-18 155629.png" alt="Experience Image" class="round-image">
+            
+<section class="experiment" id="experiment">
+  <div class="container">
+    <h2>Experiment with DMS Echo Flux</h2>
+    <p>Discover the power of innovative document management</p>
+    
+    <!-- Interactive Demos -->
+    <div class="demo-section">
+      <h3>Interactive Demos</h3>
+      <div class="demo-container">
+        <iframe src="./sssss.png" frameborder="0"></iframe>
+        <iframe src="./sssss2.png" frameborder="0"></iframe>
+        <iframe src="sssss3.png" frameborder="0"></iframe>
+      </div>
+    </div>
+    
+    <!-- Testimonials -->
+    <div class="testimonial-section">
+      <h3>What Our Clients Say</h3>
+      <div class="testimonial-container">
+        <blockquote>
+          <p>"DMS Echo Flux revolutionized our document management process."</p>
+          <cite>Shayra Chissumba, CEO</cite>
+        </blockquote>
+        <blockquote>
+          <p>"DMS Echo Flux saved us time and increased productivity."</p>
+          <cite>Jane Smith, Manager</cite>
+        </blockquote>
+      </div>
+    </div>
+    
+    <!-- Case Studies -->
+    <div class="case-study-section">
+      <h3>Success Stories</h3>
+      <div class="case-study-container">
+        <div class="case-study">
+          <h4>Case Study 1</h4>
+          <p>Our business has improved significantly</p>
+          <button>Read More</button>
+        </div>
+        <div class="case-study">
+          <h4>Case Study 2</h4>
+          <p>DMS echo flux saved our company</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Infographics -->
+    <div class="infographic-section">
+      <h3>Experiment-Related Data</h3>
+      <div class="infographic-container">
+        <img src="./sssss4.png" alt="Infographic 1">
+        <img src="./sssss5.png" alt="Infographic 2">
+      </div>
+    </div>
+    
+    <!-- Videos -->
+    <div class="video-section">
+      <h3>Watch Our Videos</h3>
+      <div class="video-container">
+        <iframe src="./chatting/no1.mp4" frameborder="0"></iframe>
+        <iframe src="./chatting/no2.mp4" frameborder="0"></iframe>
+      </div>
+    </div>
+    
+    <!-- Blog Posts -->
+    <div class="blog-section">
+      <h3>Latest Blog Posts</h3>
+      <div class="blog-container">
+        <article>
+          <h4>Blog Post 1</h4>
+          <p>THIS IS THE BEST DMS WEBSITE EVER.</p>
+          <button>Read More</button>
+        </article>
+        <article>
+          <h4>Blog Post 2</h4>
+          <p> IM GLAD TO BE PART OF DMS ECHO FLUX</p>
+          <button>Read More</button>
+        </article>
+      </div>
+    </div>
+    
+    <!-- Call-to-Action -->
+    <div class="cta-section">
+      <h3>Start Experimenting Today!</h3>
+      <button>Sign Up for Free</button>
+    </div>
+  </div>
+</section>
+<style>
+.experiment {
+  padding: 50px 0;
+  color: black;
+}
+
+.experiment .container {
+  max-width: 1200px;
+  margin: 0 auto;
+background-image: #0ff;
+}
+
+.demo-section, .testimonial-section, .case-study-section, .infographic-section, .video-section, .blog-section, .cta-section {
+  margin-bottom: 40px;
+}
+
+.demo-container, .testimonial-container, .case-study-container, .infographic-container, .video-container, .blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.demo-container iframe, .video-container iframe {
+  width: 30%;
+  height: 200px;
+  margin: 20px;
+}
+
+.testimonial-container blockquote {
+  width: 45%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+  background-color: white;
+}
+
+.case-study-container .case-study {
+  width: 45%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+  background-color: white;
+}
+
+.infographic-container img {
+  width: 45%;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.video-container iframe {
+  width: 60%;
+  height: 300px;
+  margin: 20px;
+}
+
+.blog-container article {
+  width: 45%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+  background-color: white;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-section button {
+  background-color: purple;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-section button:hover {
+  background-color: blue;
+}
+</style>
+<script>
+
+// Add event listener to demo iframes
+const demoIframes = document.querySelectorAll('.demo-container iframe');
+
+demoIframes.forEach((iframe) => {
+  iframe.addEventListener('load', () => {
+    iframe.style.border = 'none';
+  });
+});
+
+// Add event listener to testimonial blockquotes
+const testimonials = document.querySelectorAll('.testimonial-container blockquote');
+
+testimonials.forEach((testimonial) => {
+  testimonial.addEventListener('mouseover', () => {
+    testimonial.style.transform = 'scale(1.1)';
+  });
+
+  testimonial.addEventListener('mouseout', () => {
+    testimonial.style.transform = 'scale(1)';
+  });
+});
+
+</script>
+
+    
+        </section>
+
+        <section class="parallax faq">
+            <h2>Questions People Ask</h2>
+            <div class="faq-items">
+<div class="faq-container">
+
+<div class="faq-box">
+<h4>What is a Document Management System?</h4>
+<p>A Document Management System (DMS) is a software solution that stores, manages, and tracks electronic documents and files.</p>
+</div>
+
+<div class="faq-box">
+<h4>Why do I need a Document Management System?</h4>
+<p>A DMS helps organizations streamline document workflows, improve collaboration, and reduce paper clutter, resulting in increased productivity and efficiency.</p>
+</div>
+
+<div class="faq-box">
+<h4>What types of documents can be stored in a DMS?</h4>
+<p>A DMS can store various file types, including PDFs, Word documents, Excel spreadsheets, images, and videos.</p>
+</div>
+
+<div class="faq-box">
+<h4>Is my data secure in a cloud-based DMS?</h4>
+<p>Yes, reputable cloud-based DMS providers ensure data security through encryption, backups, and access controls.</p>
+</div>
+
+<div class="faq-box">
+<h4>Can I access my documents remotely?</h4>
+<p>Yes, cloud-based DMS solutions allow users to access documents from anywhere, on any device, with an internet connection.</p>
+</div>
+
+<div class="faq-box">
+<h4>How do I search for specific documents in a DMS?</h4>
+<p>DMS solutions typically include robust search functionality, allowing users to search by keyword, metadata, or file type.</p>
+</div>
+
+<div class="faq-box">
+<h4>Can I customize access permissions for different users?</h4>
+<p>Yes, DMS solutions often provide granular access controls, enabling administrators to set permissions for specific users or groups.</p>
+</div>
+
+</div>
+
+<style>
+.faq-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.faq-box {
+width: 45%;
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-box h4 {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.faq-box p {
+font-size: 14px;
+margin-bottom: 20px;
+}
+
+</style>
+            </div>
+        </section>
+
+        <section class="parallax contact" id="contact">
+
+<style>
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(./business\ 12.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+}
+
+
+    .contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn:hover {
+    background-color: #0ff;
+    color: #111;
+    box-shadow: pu;
+}
+
+
+.contact-form button:hover {
+    background-color: #0ff;
+}
+</style>
+
+<section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <button id="toggle">Get in Touch</button>
+    <div id="form-container">
+        <form id="contact-form">
+            <h2>Get in Touch</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+            <a href="shayra.html" class="contact-form-button">Cancel</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+<style>
+
+#toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c6ff;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00c6ff(0, 255, 0, 0.5);
+}
+
+#form-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+#form-container.active {
+    transform: translateY(0);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #fff;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #0ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff(0, 255, 0, 0.5);
+}
+
+.neon-text {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff(0, 255, 0, 0.5);
+}
+
+</style>
+<script>
+
+const toggleButton = document.getElementById('toggle');
+const formContainer = document.getElementById('form-container');
+
+toggleButton.addEventListener('click', () => {
+    formContainer.classList.toggle('active');
+});
+
+// Add neon effect to form text
+const formText = document.querySelectorAll('#contact-form label, #contact-form h2');
+formText.forEach((text) => {
+    text.classList.add('neon-text');
+});
+</ScripT>
+
+        </section>
+    </main>
+
+    <footer class="parallax">
+        <div class="footer-logo">DMS Logo</div>
+
+        <footer>
+        <div class="footer-container">
+        <div class="column">
+        <h4>About Us</h4>
+        <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Mission & Values</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Careers</a></li>
+        </ul>
+        </div>
+        <div class="column">
+        <h4>Quick Links</h4>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+        <div class="column">
+        <h4>Get Connected</h4>
+        <ul>
+        <li><i class="fas fa-phone"></i> +1 555 555 5555</li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:info@dms.com">shaygmail.com</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown, USA</li>
+        </ul>
+        <ul class="social-media">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="copyright">
+        &copy; 2023 DMS Echo Flux. All Rights Reserved.
+        </div>
+        </footer>
+        
+        <style>
+        footer {
+        background-image: url(./Screenshot\ 2024-10-18\ 155629.png);
+        background-size: cover;
+        color: #fff;
+        padding: 50px 0;
+        }
+        
+        .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        .column {
+        width: 30%;
+        margin: 20px;
+        }
+        
+        .column h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+        
+        .column ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        
+        .column li {
+        margin-bottom: 10px;
+        }
+        
+        .column a {
+        color: #fff;
+        text-decoration: none;
+        }
+        
+        .social-media {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+        
+        .social-media li {
+        margin-right: 10px;
+
+        }
+        
+        .social-media a {
+        font-size: 24px;
+        color: #fff;
+        }
+        
+        .copyright {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        }
+        </style>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    font-size: larger;
+
+        .slide up {
+            transform: translateY(100%);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+}
+
+header {
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(./Screenshot\ 2024-10-18\ 155211.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo img {
+    height: 100px;
+    width: 300px;
+    animation: fallDown 5s ease-out;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00c6ff;
+}
+
+.search-icon, .sidebar-icon {
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: darkblue;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.rainbow-button {
+    background: linear-gradient(135deg, #ff0072, #00c6ff);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.rainbow-button:hover {
+    background: linear-gradient(135deg, #00c6ff, #ff0072);
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #00c6ff, #ff0072);
+    color: white;
+    padding: 20px;
+    z-index: 3;
+    line-height: 1.4;
+}
+
+.sidebar-content {
+    position: relative;
+    line-height: 1.4;
+}
+
+.sidebar-logo {
+    height: 100px;
+    width: 300px;
+    animation: fallDown 5s ease-out;
+}
+
+.sidebar .close-sidebar {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 20px;
+    color: white;
+    text-align: center;
+}
+
+.welcome {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155450.png');
+    height: 800px;
+    color: darkblue;
+    font-size: x-large;
+    text-align: center;
+}
+
+.info-cards {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155654.png');
+}
+
+.clients {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 190548.png');
+}
+
+.text-image-reveal {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 234425.png');
+}
+
+.portfolio {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155450.png');
+}
+
+.services {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155322.png');
+}
+
+.experience {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155559.png');
+    color: black;
+    font-size: larger;
+}
+
+.faq {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 155654.png');
+    font-size: larger;
+}
+
+.contact {
+    background-image: url('./images/Screenshot\ 2024-10-18\ 234425.png');
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.neon-button {
+    border: none;
+    border-radius: 40px;
+    background: #00c6ff;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff0072;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    padding: 12px 25px;
+    width: 15%;
+    height: 15%;
+}
+
+.neon-button:hover {
+    background: #ff0072;
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-align: center;
+}
+
+.catchphrase {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    color: blue;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-connected {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 15px 30px;
+    background: #ff0072;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00c6ff;
+}
+
+</style>
+<script>
+    function toggleSearch() {
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.style.display = searchBar.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+}
+
+</script>
