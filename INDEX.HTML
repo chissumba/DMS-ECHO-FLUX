@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMS Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="./Screenshot 2024-08-28 173454.png" alt="DMS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./khanda@.html">Home</a></li>
+                <li><a href="./service@.html">Services</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./sign up@.html">Login</a></li>
+                <li><a href="./contact@.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<!-- Link to your CSS file -->
+    <style>
+        /* Basic styles for the landing page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url(./business\ 8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    animation: fallDown 5s ease-out;
+
+}
+
+header .logo img {
+    height: 100px;
+    width: 300px;
+    animation: fallDown 5s ease-out;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: xx-large;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+
+/* Hero section styles */
+.hero {
+    background: url('./business\ 11.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    font-size: 500%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    color:magenta;
+    font-size: x-large;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+}
+
+/* About section styles */
+.about, .features, .testimonials, .cta, .footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.features .feature-item {
+    margin: 2rem 0;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  overflow: hidden;
+  /* transform: scale(1.5); */
+}
+
+/* button */
+.cta-button {
+  display: inline-block;  
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 6px solid #0ff;
+  box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+.cta-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FF0000, #FF7300, #FFFB00, #48FF00,;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.cta-button::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.cta-button:hover::before {
+  opacity: 1;
+}
+
+.cta-button:active:after {
+  background: transparent;
+}
+
+.cta-button:active {
+  color: #000;
+  font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer p, .footer a {
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <style>
+    h1 {
+        text-shadow: 2px 2px 5px #0ff;
+        background-color:  #00FFD5, #002BFF, #FF00C8, #FF0000;
+      }
+      </style>
+      <h1 style="font-size: xxx-large; color: #0ff;">Welcome to DMS ECHO FLUX!</h1>
+<p style="color: #0ff;">Innovative Solutions for Your Business</p>
+<a href="./sign up@.html" class="cta-button">Get Started!</a>
+</section>
+
+<div class="image-container">
+    <div class="text">Experience a new way of managing your documents efficiently and securely</div>
+  </div>
+
+<style>
+.image-container {
+    background-image: url();
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
+  
+  .text {
+    background-color: #0ff;
+    color: black;
+    font-size: xx-large; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
+</style>
+<style>
+    div.gallery {
+      border: 3px solid #0ff;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid whitesmoke;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+      position: center;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./Screenshot 2024-10-10 154609.png">
+          <img src="./Screenshot 2024-10-10 154609.png" alt="Forest" width="600" height="400" style="position: center; height: 400px;">
+        </a>
+        <div class="desc" style="font-size: xx-large; color: silver; font-style: inherit;"></div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./Screenshot 2024-10-10 154723.png">
+        <img src="./Screenshot 2024-10-10 154723.png" alt="Forest" width="600" height="400" style="position: center; height: 400px;">
+      </a>
+      <div class="desc" style="font-size: xx-large; color: silver;"></div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./Screenshot 2024-10-10 154744.png">
+        <img src="./Screenshot 2024-10-10 154744.png" alt="Forest" width="600" height="400" style="position: center; height: 400px;">
+      </a>
+      <div class="desc" style="font-size: xx-large; color: silver;"></div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./Screenshot 2024-10-10 154703.png">
+        <img src="./Screenshot 2024-10-10 154703.png" alt="Forest" width="600" height="400" style="position: center; height: 400px;">
+      </a>
+      <div class="desc" style="font-size: xx-large; color: silver;"></div>
+    </div>
+  </div>
+
+        <div class="hero-section">
+            <h1 style=" text-shadow: 2px 2px 5px magenta; color: blue; text-align: center;">Organize Your Document<br> Seamlessly<h1>
+                
+           <maquee><p style="color: white">Experience a new way of managing your documents efficiently and securely.</p</maquee> 
+            <button class="cta-button" style="text-align: center;">Latest Update!</button>
+        </div>
+    </header>
+    
+    <section id="features" class="features-section">
+        <div class="feature">
+            <img src="./DOC 5.jpeg" alt="Feature 1">
+            <h2>Secure Storage</h2>
+            <p>Keep your documents safe and secure with our state-of-the-art encryption technology.</p>
+        </div>
+        <div class="feature">
+            <img src="./business 10.jpg" alt="Feature 2">
+            <h2>Easy Access</h2>
+            <p>Access your documents from anywhere, at any time, with just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <img src="./doc 4.avif" alt="Feature 3">
+            <h2>Collaborative Tools</h2>
+            <p>Collaborate with your team in real-time, with seamless sharing and editing tools.</p>
+        </div>
+    </section>
+            
+    <style>
+        body 
+        .morph-text { font-size: 4rem; font-weight: bold; color: #0ff; position: relative; text-align: center; }
+        .morph-text span {
+          position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 1s, transform 1s;
+        }
+        .morph-text span.active { opacity: 1; transform: scale(1); }
+        .morph-text span.out { opacity: 0; transform: scale(0.5); }
+      </style>
+    </head>
+    <body>
+      <div class="morph-text">
+        <span class="active" style="color: #002BFF;">Inspiration</span>
+        <span style="color: #FF00C8;">Innovation</span>
+        <span style="color: yellow;">Creativity</span>
+        <span style="color: orangered;">Transformation</span>
+      </div>
+    
+      <script>
+        const texts = document.querySelectorAll('.morph-text span');
+        let current = 0;
+    
+        function morphText() {
+          const currentText = texts[current];
+          const nextText = texts[(current + 1) % texts.length];
+    
+          currentText.classList.remove('active');
+          currentText.classList.add('out');
+    
+          nextText.classList.remove('out');
+          nextText.classList.add('active');
+    
+          current = (current + 1) % texts.length;
+        }
+    
+        setInterval(morphText, 2000); // Switch text every 2 seconds
+      </script>
+<video src="no1.mp4" controls></video>
+<style>
+  video {
+    width: 80%;
+    height: 400px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-image: url(./Screenshot\ 2024-10-11\ 130259.png); width: 100%;
+    
+  }
+  </style>
+
+<style>
+    
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .container img {vertical-align: middle;}
+      
+      
+      .container .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+      </style>
+
+    <div class="container">
+      <img src="./Screenshot 2024-10-10 154744.png" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1>DMS ECHO FLUX</h1>
+        <p>Unleash Your Documents</p>
+      </div>
+    </div>
+   
+
+    <section id="stats" class="stats-section">
+        <h2 style="color: white;">Document Usage Statistics</h2>
+        <div class="bar-chart">
+            <div class="bar" data-percentage="70%">PDF Documents - 70%</div>
+            <div class="bar" data-percentage="50%">Word Documents - 50%</div>
+            <div class="bar" data-percentage="30%">Excel Sheets - 30%</div>
+            <div class="bar" data-percentage="40%">Images - 40%</div>
+        </div>
+    </section>
+    
+    <style>
+        /* Stats Section */
+    .stats-section {
+        padding: 40px 20px;
+        text-align: center;
+        background-image: url(./glassWater.png);
+    }
+    
+    .stats-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .bar-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bar {
+        width: 80%;
+        background-color: purple;
+        margin: 10px 0;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+    }
+    
+    .bar::after {
+        content: attr(data-percentage);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        transition: width 2s ease-out;
+        width: 0;
+    }
+    
+    .bar:hover::after {
+        width: 100%;
+    }
+    
+    </style>
+
+</section>
+
+<section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We are a dedicated team committed to providing you with the best document management solution. Our platform is designed to be user-friendly and secure, ensuring a hassle-free experience for all your document management needs.</p>
+</section>
+
+
+
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    <footer class="footer">
+        <p>&copy; 2024 DocuManage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+
+
+body {
+    background-image: url(./Screenshot\ 2024-10-18\ 155629.png);
+    background-size: cover;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    font-size: x-large;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url('./business\ 8.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-bet0ween;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: x-large;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.7s ease;
+    font-size: x-large;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+.hero-section {
+    max-width: 2000px;
+    margin-top: 50px;
+    background-image: url(./Screenshot\ 2024-10-11\ 135711.png);
+    background-size: cover;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #0ff;
+}
+
+.features-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration-style: double;
+    background-image: url(./1.jpg);
+    background-size: cover;
+}
+
+.feature {
+    background-image: url(./mm1.png);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(triangles.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(./business\ 12.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn:hover {
+    background-color: #0ff;
+    color: #111;
+    box-shadow: pu;
+}
+
+
+.contact-form button:hover {
+    background-color: #0ff;
+}
+
+    .footer {
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px turquoise, 0 0 15px turquoise, 0 0 20px turquoise;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+    background-image: url(./business\ 8.webp);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    
+}
+
+
+/* Additional styles for sticky navigation */
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0ff;
+    box-shadow: 0 0 5px turquoise, 0 0 15px turquoise, 0 0 20px turquoise;
+    z-index: 1000;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Animation for feature sections */
+.feature {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.feature-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const sectionId = link.getAttribute('href');
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    const ctaButton = document.querySelector('.cta-button');
+    ctaButton.addEventListener('click', () => {
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const ctaButton = document.querySelector('.cta-button');
+    const features = document.querySelectorAll('.feature');
+    const navbar = document.querySelector('.navbar');
+    const header = document.querySelector('.header');
+
+    // Smooth scrolling for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const sectionId = link.getAttribute('href');
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Intersection Observer for feature animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('feature-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    features.forEach(feature => {
+        observer.observe(feature);
+    });
+
+    // Sticky navigation on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > header.offsetHeight - navbar.offsetHeight) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+    });
+});
+</script>
+
+<section id="stats" class="stats-section">
+
+    <style>
+    .particle {
+        width: 10px;
+        height: 10px;
+        background: rgba(0, 255, 255, 0.8); 
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const body = document.body;
+  
+      function createParticle(x, y) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = `${x}px`;
+        particle.style.top = `${y}px`;
+        body.appendChild(particle);
+  
+        // Animate the particle and remove it after 1 second
+        setTimeout(() => {
+          particle.style.transform = `translate(${Math.random() * 50 - 25}px, ${Math.random() * 50 - 25}px) scale(0)`;
+          particle.style.opacity = 0;
+        }, 100);
+  
+        setTimeout(() => {
+          body.removeChild(particle);
+        }, 1000);
+      }
+  
+      document.addEventListener('mousemove', (e) => {
+        createParticle(e.pageX, e.pageY);
+      });
+    </script>
+
+</body>
+</html>
+
