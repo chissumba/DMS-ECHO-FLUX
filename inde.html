@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+
+ <!-- Logo -->
+ <div class="logo"></div>
+
+<style>
+.logo {
+      width: 250px;
+      height: 100px;
+      background: url('./Screenshot\ 2024-08-28\ 173454.png') no-repeat center center;
+      background-size: cover;
+      border-radius: 50%;
+      animation: bouncing 2s infinite, glowing 1.5s infinite alternate;
+    }
+
+    /* Bouncing Animation */
+    @keyframes bouncing {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Glowing/Shimmering Animation */
+    @keyframes glowing {
+      0% {
+        box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+      }
+      100% {
+        box-shadow: 0 0 5px #007bff, 0 0 15px #0ff, 0 0 20px #0ff;
+      }
+    }
+</style>
+
+    <nav class="nav-links">
+      <a href="./back9.html">Home</a>
+      <a href="./service@.html">Services</a>
+      <a href="./about.html">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="./sign up@.html">Login</a>
+      <a href="./contact@.html">Contact</a>
+      <button class="btn-book">Book Now</button>
+    </nav>
+
+        <div class="search-container">
+          <div class="search-container">
+            <div class="search-icon" onclick="toggleSearch()">
+              <i class="fas fa-search">🔍</i>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: url('./sssss2.png') no-repeat center center/cover;
+  animation: moveBackground 8s linear infinite;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-style: initial;
+  font-size: larger;
+}
+
+/* Background Animation */
+@keyframes moveBackground {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(./business\ 8.webp);
+  background-size: cover;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInHeader 2.5s forwards;
+
+  
+}
+
+@keyframes fadeInHeader {
+  to { opacity: 1; }
+}
+
+/* Main Content Padding */
+.hero {
+  margin-top: 200px; /* Matches the height of your header */
+}
+
+
+/* Navigation Links */
+.nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-size: larger;
+}
+
+.nav-links a:hover {
+  color: #0ff;
+}
+
+.btn-book {
+    background-color: #A6F20C;
+    color: #3D3D3D;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.6s ease;
+    width: 200px;
+}
+
+.btn-book:hover {
+    background-color: #8BC60B;
+}  
+
+
+
+/* Larger Circular Sidebar */
+    .circular-sidebar {
+      position: fixed;
+      bottom: -150px; /* Hidden initially */
+      right: -150px; /* Hidden initially */
+      width: 600px; /* Increased size */
+      height: 700px; /* Increased size */
+      background-image: url(./business\ 8.webp);
+      border-radius: 50%;
+      transform: scale(0); /* Hidden initially */
+      transition: transform 0.6s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .circular-sidebar.open {
+      transform: scale(1); /* Expand into view */
+    }
+
+    /* Menu items inside the larger circle */
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      background: #00bcd4;
+      padding: 15px 30px; /* Adjusted padding */
+      border-radius: 50%;
+      margin: 20px; /* Adjusted margin */
+      font-size: 18px; /* Increased font size */
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .menu a:hover {
+      background:  rgba(0, 0, 0, 0.8);
+      transform: scale(1.3); /* Enlarges on hover */
+    }
+
+    /* Toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 18px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #00bcd4;
+    }
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #6a5acd; /* Purple */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+  background: #483d8b; /* Darker purple */
+}
+/* Search Container */
+.search-container {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0ff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+  background: transparent;
+}
+
+/* Search Bar */
+.search-bar {
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.5s ease;
+}
+
+.search-bar input {
+  width: 600px;
+  opacity: 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+.search-container.active .search-bar {
+  clip-path: circle(150% at 50% 50%);
+}
+
+.search-container.active input {
+  width: 500px;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Toggle button -->
+  <button class="toggle-btn" id="toggleBtn">☰</button>
+
+  <!-- Larger Circular Sidebar -->
+  <div class="circular-sidebar" id="circularSidebar">
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const circularSidebar = document.getElementById('circularSidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      circularSidebar.classList.toggle('open');
+    });
+  </script>
+
+<script>
+    function toggleSearch() {
+  const container = document.querySelector('.search-container');
+  container.classList.toggle('active');
+}
+</script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #007bff;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      height: 80vh;
+      justify-content: center;
+    }
+
+    /* Carousel Styles */
+    .carousel {
+      width: 70%;
+      height: 100%;
+      position: relative;
+      border: 10px solid #00bcd4;
+      border-radius: 15px;
+      box-shadow: 0 0 5px turquoise, 0 0 15px turquoise, 0 0 20px turquoise;
+      overflow: hidden;
+      background-color: #000;
+      margin-top: 70px;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 5px solid #007bff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* Landing Section Styles */
+    .landing {
+      width: 50%;
+      height: 100%;
+      padding: 40px;
+      text-align: center;
+      background-color: navy;
+      border-left: 10px solid #ddd;
+      border-right: 10px solid #ddd;
+      border-bottom: 10px solid #ddd;
+      border-top: 10px solid #ddd;
+      margin-top: 50px;
+    }
+
+    .animated-title {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 3s ease-in-out forwards;
+    }
+
+    .animated-title span {
+      display: block;
+      animation: slideIn 2s ease-in-out forwards;
+    }
+
+    .animated-title span:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    .animated-title span:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .animated-paragraph {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      background: transparent;
+      transition: background 0.3s ease, transform 0.3s ease;
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: 2s;
+    }
+
+    .cta-button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Carousel Section -->
+    <div class="carousel">
+      <div class="slide active">
+        <img src="./business 5.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="./business 8.webp" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="./ssssss1.png" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="./mm1.png" alt="Image 4">
+      </div>
+      <div class="slide">
+        <img src="./business 12.jpeg" alt="Image 5">
+      </div>
+      <div class="slide">
+        <img src="./blu.png" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="./business 9.jpeg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="./white front image dress.png" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="./white front image dress.png" alt="Image 3">
+      </div>
+    </div>
+
+    <!-- Landing Section -->
+    <div class="landing">
+      <h1 class="animated-title">
+        <span style="color: #007bff; font-weight: bold; font-size: 4rem;">Welcome to</span>
+        <span style="color: #f4a261; font-weight: bold; font-size: 4rem">Your Amazing</span>
+        <span style="color: aqua; font-weight: bold; font-size: 4rem;">Landing Page</span>
+      </h1>
+      <p class="animated-paragraph" style="font-size: 3rem; color: floralwhite;">
+        Discover the world of stunning designs, incredible features, and seamless functionality. Scroll to explore more.
+      </p>
+      <a href="#explore" class="cta-button">Explore Now</a>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+      // Remove active class from the current slide
+      slides[currentIndex].classList.remove('active');
+
+      // Move to the next slide
+      currentIndex = (currentIndex + 1) % slides.length;
+
+      // Add active class to the new slide
+      slides[currentIndex].classList.add('active');
+    }
+
+    // Automatically change slides every 3 seconds
+    setInterval(showNextSlide, 3000);
+  </script>
+
+
+<footer class="footer">
+  <p>&copy; 2024 DocuManage. All rights reserved.</p>
+</footer>
+
+<style>
+  .footer {
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px turquoise, 0 0 15px turquoise, 0 0 20px turquoise;
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+    outline: none;
+    background-image: url(./business\ 8.webp);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+  }
+</style>
+
+
